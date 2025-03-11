@@ -30,7 +30,7 @@ export async function JokesGridList({ query }: JokesGridListProps) {
       <ul className="relative grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-9">
         {jokes.map((joke) => (
           <li key={joke.id} className="flex w-full">
-            <JokeCardItem joke={joke} />
+            <JokeCardItem joke={joke} query={query} />
           </li>
         ))}
       </ul>

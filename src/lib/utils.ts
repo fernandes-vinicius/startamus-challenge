@@ -17,3 +17,7 @@ export async function tryCatch<T, E = Error>(fn: () => Promise<T>): Promise<Resu
     return { data: null, error: error as E }
   }
 }
+
+export function formateDate(date: string) {
+  return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+}

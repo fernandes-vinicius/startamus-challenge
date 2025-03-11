@@ -10,7 +10,13 @@ export function AppHeader() {
   return (
     <header className="relative top-0 z-20 flex h-24 w-full items-center justify-between px-10">
       <Link href="/" aria-label="Go To Home">
-        <Image src="/images/chuck_norris.png" alt="Chuck Norris" width={32} height={32} />
+        <Image
+          src="/images/chuck_norris.png"
+          alt="Chuck Norris"
+          width={32}
+          height={32}
+          className="h-8 w-8 object-contain"
+        />
       </Link>
 
       <div className="flex items-center gap-1">

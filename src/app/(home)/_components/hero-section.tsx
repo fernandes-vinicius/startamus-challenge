@@ -1,3 +1,4 @@
+import { ImFeelingLuckyButton } from './im-feeling-lucky-button'
 import { SearchForm } from './search-form'
 
 export function HeroSection() {
@@ -11,6 +12,9 @@ export function HeroSection() {
       </h2>
       <div className="flex w-full max-w-2xl flex-col justify-center gap-2">
         <SearchForm />
+        <div className="flex w-full place-content-center">
+          <ImFeelingLuckyButton />
+        </div>
       </div>
     </section>
   )
