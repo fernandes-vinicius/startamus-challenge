@@ -10,7 +10,7 @@ export async function CategoriesList() {
   }
 
   return (
-    <ul className="relative flex items-center justify-center gap-4 overflow-x-auto px-[7%] pb-2 sm:flex-wrap sm:overflow-x-hidden sm:pb-0">
+    <ul className="relative flex w-full items-center justify-center gap-4 overflow-x-auto px-[7%] pb-2 sm:flex-wrap sm:overflow-x-hidden sm:pb-0 [&::-webkit-scrollbar]:hidden">
       {categories?.map((category) => (
         <li key={category} className="inline-flex">
           <CategoryItem category={category} />
