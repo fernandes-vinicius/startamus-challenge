@@ -1,34 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Startamus | Teste Técnico Frontend
 
-## Getting Started
+## 📌 Sobre o projeto
 
-First, run the development server:
+Este projeto é uma aplicação frontend que consome a API [ChuckNorris.io](https://api.chucknorris.io/) para buscar e exibir piadas do Chuck Norris. A interface permite realizar buscas por palavras-chave e apresenta os resultados de forma amigável e responsiva.
+
+## ✅ Funcionalidades
+
+- 🔍 **Busca interativa**: Os usuários podem pesquisar por piadas do Chuck Norris.
+- 📜 **Exibição de resultados**: Mostra as piadas encontradas com o máximo de informações disponíveis.
+- 📱 **Design responsivo**: Adaptação para diferentes tamanhos de tela e densidades de pixel.
+- 🎲 **"I'm Feeling Lucky"**: Botão que exibe uma piada aleatória.
+- ✨ **Destaque do termo de busca**: A palavra-chave pesquisada pode ser destacada nos resultados.
+- ⚡ **Desempenho otimizado**: Utiliza técnicas modernas para garantir rapidez e fluidez na experiência do usuário.
+
+## 🛠️ Tecnologias utilizadas
+
+- **Next.js 15** 🚀
+- **TypeScript** 🟦
+- **React** ⚛️
+- **Fetch API** para requisições HTTP 🌍
+- **Vitest** para testes unitários ✅
+- **Cypress** para testes de integração 🔬
+- **Tailwind CSS** para estilização 🎨
+- **Shadcn UI** para UI Library 🎨
+
+## 📦 Como rodar o projeto
+
+### 1️⃣ Pré-requisitos
+
+Certifique-se de ter instalado:
+
+- **Node.js** (versão 18+)
+- **pnpm** (Como instalar?)
+  ```sh
+  sudo npm install -g pnpm
+  ```
+- Extensão do Biome para VS Code (se estiver usando o editor VS Code)
+
+### 2️⃣ Instalar dependências
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Configurar variáveis de ambiente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Antes de rodar o projeto, copie o arquivo `.env.example` para `.env`:
 
-## Learn More
+```bash
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+E defina a seguinte variável:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```ini
+NEXT_PUBLIC_API_URL="https://api.chucknorris.io"
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3️⃣ Rodar o ambiente de desenvolvimento
 
-## Deploy on Vercel
+```bash
+pnpm dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A aplicação estará disponível em `http://localhost:3000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4️⃣ Rodar testes
+
+- **Testes unitários**:
+
+```bash
+pnpm test
+```
+
+- **Testes de integração com Cypress**:
+
+```bash
+pnpm cypress
+```
+
+## 📜 Scripts disponíveis
+
+- `dev`: Inicia o ambiente de desenvolvimento com TurboPack.
+- `build`: Faz o build do projeto.
+- `start`: Inicia a aplicação em produção.
+- `lint`: Verifica o código com Biome.
+- `format`: Formata o código automaticamente.
+- `check:types`: Verifica os tipos TypeScript.
+- `check:all`: Executa lint, verificação de tipos, testes e build.
+- `test`: Executa os testes com Vitest e gera cobertura.
+
+## 🏆 Critérios de Avaliação
+
+1. ✅ O projeto atende aos requisitos básicos?
+2. 📖 A documentação explica como rodar o projeto?
+3. 🎨 A experiência do usuário é boa (usabilidade, acessibilidade, visual)?
+4. 🏗️ O código está bem estruturado e segue boas práticas?
+5. 🔍 O projeto tem testes automatizados com boa cobertura?
+6. 🛠️ As bibliotecas e recursos da linguagem foram usados de forma eficiente?
+
+## 🤝 Contribuição
+
+Caso queira sugerir melhorias ou relatar problemas, fique à vontade para abrir uma issue ou pull request. 🚀
+
+---
+
+📢 **Autor**: [Vinicius Fernandes](https://github.com/fernandes-vinicius)
+
+🔗 [Portfolio](https://vinicius-frontend.vercel.app)
+
+🔗 [Linkedin](https://www.linkedin.com/in/fernandes-vinicius)
+
