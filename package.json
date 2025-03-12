@@ -9,7 +9,7 @@
     "lint": "biome check ./src",
     "format": "biome check --write ./src",
     "check:types": "tsc --pretty --noEmit",
-    "check:all": "pnpm run lint && pnpm run check:types && pnpm test run --coverage && pnpm run build",
+    "check:all": "pnpm run lint && pnpm run check:types && pnpm test run && pnpm run build",
     "test": "vitest --coverage",
     "cypress:open": "cypress open"
   },
