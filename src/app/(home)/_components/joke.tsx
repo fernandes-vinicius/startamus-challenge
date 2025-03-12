@@ -28,6 +28,9 @@ export async function Joke({ category }: JokeProps) {
         className="h-12 w-12 object-contain"
       />
       <div className="mt-14 flex w-full max-w-md flex-col items-start gap-1 rounded-3xl rounded-tl-none border bg-primary/10 p-4 text-center shadow-sm">
+        <span data-testid="joke-value" className="sr-only">
+          {joke.value}
+        </span>
         <AnimatedText sequence={`"${joke.value}"`} className="text-base leading-relaxed" />
         <span className="w-full text-center text-muted-foreground text-xs">{formateDate(joke.updated_at)}</span>
         <div className="flex w-full justify-end">

@@ -89,6 +89,7 @@ pnpm cypress
 - `check:types`: Verifica os tipos TypeScript.
 - `check:all`: Executa lint, verificação de tipos, testes e build.
 - `test`: Executa os testes com Vitest e gera cobertura.
+- `cypress:open`: Abre o Cypress testing suite
 
 ## 🏆 Critérios de Avaliação
 
