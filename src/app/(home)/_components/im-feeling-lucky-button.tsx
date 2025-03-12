@@ -2,16 +2,14 @@
 
 import { Button } from '@/components/ui/button'
 import { useQueryParam } from '@/hooks/use-query-param'
-import { getCategories } from '@/lib/api/get-categories'
-import { tryCatch } from '@/lib/utils'
+
+import { randomCategoryAction } from '../_actions/random-category-action'
 
 export function ImFeelingLuckyButton() {
   const { changeParam } = useQueryParam(['category'])
 
   async function handleClick() {
-    const { data: categories } = await tryCatch(() => getCategories())
-
-    const randomCategory = categories?.[Math.floor(Math.random() * categories.length)] || ''
+    const randomCategory = await randomCategoryAction()
 
     if (randomCategory) {
       changeParam('category', randomCategory)

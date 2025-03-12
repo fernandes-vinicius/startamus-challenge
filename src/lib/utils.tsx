@@ -21,3 +21,19 @@ export async function tryCatch<T, E = Error>(fn: () => Promise<T>): Promise<Resu
 export function formateDate(date: string) {
   return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 }
+
+export function highlightSearchTerm(text: string, query = '') {
+  if (!query) return text
+
+  const regex = new RegExp(`(${query})`, 'gi') // "gi" for case insensitive
+
+  return text.split(regex).map((part, i) =>
+    regex.test(part) ? (
+      <span key={i.toString()} className="rounded bg-yellow-300 px-1 dark:bg-yellow-500 dark:text-black">
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  )
+}

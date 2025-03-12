@@ -20,7 +20,7 @@ export function SearchInput() {
     <Input
       defaultValue={query}
       onChange={debounced}
-      placeholder="What are you looking for?"
+      placeholder="Search for a joke"
       className="h-12 rounded-full px-4 py-2"
     />
   )

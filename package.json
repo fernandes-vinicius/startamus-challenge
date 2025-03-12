@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "biome check ./src",
     "format": "biome check --write ./src",
-    "check-types": "tsc --pretty --noEmit",
-    "check-all": "pnpm run lint && pnpm run check-types && pnpm run build"
+    "check:types": "tsc --pretty --noEmit",
+    "check:all": "pnpm run lint && pnpm run check:types && pnpm test run --coverage && pnpm run build",
+    "test": "vitest --coverage"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.6",
@@ -32,12 +33,19 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.2.0",
     "@types/node": "^20.17.24",
     "@types/react": "^19",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "^19",
     "@types/react-type-animation": "^1.1.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "3.0.8",
+    "jsdom": "^26.0.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.8"
   }
 }
