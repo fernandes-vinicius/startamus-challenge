@@ -103,6 +103,12 @@ pnpm cypress
 
 Caso queira sugerir melhorias ou relatar problemas, fique à vontade para abrir uma issue ou pull request. 🚀
 
+## 🌍 Ver o projeto online
+
+Você pode acessar a versão hospedada do projeto na Vercel através do link:
+
+🔗 [Ver na Vercel](https://startamus-challenge.vercel.app)
+
 ---
 
 📢 **Autor**: [Vinicius Fernandes](https://github.com/fernandes-vinicius)
